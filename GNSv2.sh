@@ -1,7 +1,7 @@
 # Manual Installation of GNS3
 ## Install Dependencies
-sudo apt-get update
-sudo apt-get install python3-dev python3-setuptools python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-ws4py python3-netifaces python3-pip cmake uuid-dev libelf-dev libpcap-dev
+sudo apt-get -y update
+sudo apt-get -y install python3-dev python3-setuptools python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-ws4py python3-netifaces python3-pip cmake uuid-dev libelf-dev libpcap-dev
 ## Create installation location
 mkdir GNS3
 cd GNS3
@@ -29,9 +29,9 @@ cd gns3-gui-*
 sudo python3 setup.py install
 cd ..
 ## Install  SSL dependencies
-sudo apt-get install libssl1.0.0:i386
+sudo apt-get -y install libssl1.0.0:i386
 sudo ln -s /lib/i386-linux-gnu/libcrypto.so.1.0.0 /lib/libcrypto.so.4
-sudo apt-get install bison flex git
+sudo apt-get -y install bison flex git
 git clone http://github.com/ndevilla/iniparser.git
 cd iniparser
 make
@@ -40,7 +40,7 @@ sudo cp src/iniparser.h /usr/local/include
 sudo cp src/dictionary.h /usr/local/include
 cd ..
 ## Install IdlePC dependencies
-sudo apt-get install iouyap cpulimit virtualbox qemu wireshark
+sudo apt-get -y install iouyap cpulimit virtualbox qemu wireshark
 ## Install vpcs
 cd vpcs-*/src
 ./mk.sh
