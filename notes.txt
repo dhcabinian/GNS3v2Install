@@ -1,0 +1,2 @@
+need to turn off firewall
+need to create host only network in virtualbox
