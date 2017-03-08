@@ -1,0 +1,18 @@
+#! /bin/sh
+case "$1" in
+    start)
+        echo "Starting noip2"
+        /usr/local/bin/noip2
+    ;;
+    stop)
+        echo -n "Shutting down noip2"
+        for i in `noip2 -S 2>&1 | grep Process | awk '{print $2}' | tr -d ','`
+        do
+          noip2 -K $i
+        done
+    ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+esac
+exit 0
