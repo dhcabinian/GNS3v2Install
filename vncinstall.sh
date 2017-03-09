@@ -4,7 +4,8 @@ sudo apt-get -y install ubuntu-desktop tightvncserver gnome-panel gnome-settings
 vncserver :1
 vncserver -kill :1
 sudo rm ~/.vnc/xstartup
-sudo chmod 777 ~/.vnc 
+sudo chmod 777 ~/.vnc
+sudo chmod 777 xstartup
 sudo cp xstartup ~/.vnc/xstartup
 vncserver :1
 #ssh -L 5901:127.0.0.1:5901 ubuntu@<IP Address> -i ~/.ssh/<ssh key>.pem
