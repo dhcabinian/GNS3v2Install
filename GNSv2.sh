@@ -1,6 +1,7 @@
 # Manual Installation of GNS3
 ## Install Dependencies
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install python3-dev python3-setuptools python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebkit python3-ws4py python3-netifaces python3-pip cmake uuid-dev libelf-dev libpcap-dev
 ## Create installation location
 mkdir GNS3

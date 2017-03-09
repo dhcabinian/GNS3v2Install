@@ -1,5 +1,6 @@
 #https://medium.com/@joseison/running-ubuntu-desktop-gui-aws-ec2-instance-on-windows-3d4d070da434#.hkwfndh3r
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install ubuntu-desktop tightvncserver gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
 vncserver :1
 vncserver -kill :1
