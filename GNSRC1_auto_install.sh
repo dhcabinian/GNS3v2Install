@@ -14,8 +14,8 @@ sudo apt-get -y install iouyap cpulimit virtualbox qemu wireshark
 #https://gns3.com/discussions/gns3-2-0-alpha-4-released
 #sudo add-apt-repository -r ppa:gns3/ppa
 sudo add-apt-repository ppa:gns3/unstable
-sudo apt-get update
-sudo apt-get install gns3-gui
+sudo apt-get -y update
+sudo apt-get -y install gns3-gui
 
 ###############################################################################
 
