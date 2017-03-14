@@ -7,7 +7,7 @@ sudo apt-get -y install python3-dev python3-setuptools python3-pyqt5 python3-pyq
 mkdir GNS3
 cd GNS3
 ### Download alpha version of GNS3
-wget https://github.com/GNS3/gns3-gui/releases/download/v2.0.0b3/GNS3-2.0.0b3.source.zip
+wget https://github.com/GNS3/gns3-gui/releases/download/v2.0.0rc2/GNS3-2.0.0rc2.source.zip
 unzip *.zip
 rm *.source.zip
 unzip '*.zip'
